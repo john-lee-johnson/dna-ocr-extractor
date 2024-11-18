@@ -29,12 +29,13 @@ Run `dna_training_image_processor.py` to collect training examples.
 
 ## Step 2: Model Training
 Run `dna_ocr_incremental_training.py` to:
-- Train a new model with collected images
-- Use newly images and retrain
+- Train a new model with collected character images
+- Use newly acquired character images and retrain
 - Test model performance
 
 ## Step 3: DNA Sequence Extraction
-Run `dna_sequence_extractor.py` to process clean DNA sequence images.
+Run `dna_sequence_extractor.py` to process DNA sequence images.
+Try to crop-out all non-DNA characters.
 
 ### Initial Processing
 If characters are touching or bulky (i.e., serif fonts):
@@ -92,7 +93,7 @@ tensorflow
 PIL
 tkinter
 File Structure
-Copy├── dna_training_data/
+├── dna_training_data/
 │   ├── a/
 │   ├── c/
 │   ├── g/
