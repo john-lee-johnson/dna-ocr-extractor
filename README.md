@@ -71,6 +71,8 @@ In the final sequence editor window:
 - Enter: Finish
 - Esc: Cancel
 
+If you are missing a character, just go to the preceding character, select the box, and type the missing character. It will append it to the previous character.
+
 ### Output
 - Sequence is automatically copied to clipboard
 - Optional export to JSON/CSV/TXT in 'exports' folder
